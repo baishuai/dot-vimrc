@@ -1,4 +1,4 @@
-source ~/.vim/bundles.vim
+source ~/.vim/plugs.vim
 
 " encoding dectection
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
@@ -14,7 +14,7 @@ syntax on
 "--------
 " color scheme
 set background=dark
-color solarized
+color fisa
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
