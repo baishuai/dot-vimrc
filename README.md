@@ -225,13 +225,13 @@ Clone in Mac
         git clone git://github.com/humiaozuzu/dot-vimrc.git ~/.vim
         ln -s ~/.vim/vimrc ~/.vimrc
 
-3. Setup `Vundle`:
+3. Setup `Plug`:
 
-        git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+        curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 4. Install bundles. Launch vim(ignore the errors and they will disappear after installing needed plugins)and run:
 
-        :BundleInstall
+        :PlugInstall
 
 Thst's it!
 
@@ -241,9 +241,10 @@ For installation on Windows, please refer to this post: http://blog.yoxyue.com/p
 
 All plugins are listed in file `bundles.vim` with detailed comments, just add plugins as you like.
 
-1. `:BundleClean` to clean up unused plugins
-2. `:BundleInstall` to install newly added plugins
-3. `:BundleInstall!` to upgrade all plugins
+1. `:PlugClean` to clean up unused plugins
+2. `:PlugInstall` to install newly added plugins
+3. `:PlugUpdate` to upgrade all plugins
+4. `:PlugUpgrade` to upgrade `plug` itself
 
 Other configurations are also well organized in vimrc.
 
